@@ -16,7 +16,7 @@
 </div>
 <Footer />
 
-<MetaTags>
+<MetaTags
 	title="Jonathan Bangert"
 	description="Jonathan Bangerts personal website"
-</MetaTags>
+/>
