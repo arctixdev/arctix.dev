@@ -20,4 +20,5 @@ jobs:
       - run: npm i
       - run: npm run build
       - run: npm test
-      - run: ye.sh
+      - run: touch docs/.nojekyll
+      - run: echo "jonathanbangert.com" > docs/CNAME
