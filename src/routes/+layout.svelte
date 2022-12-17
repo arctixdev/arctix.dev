@@ -2,8 +2,7 @@
 	import '../app.postcss';
 	import Navbar from '../components/navbar.svelte';
 	import Footer from '../components/footer.svelte';
-	import { MetaTags, JsonLd } from 'svelte-meta-tags';
-
+	import { MetaTags } from 'svelte-meta-tags';
 </script>
 
 <svelte:head>
@@ -16,8 +15,4 @@
 	<Footer />
 </div>
 
-
-<MetaTags
-	title="Jonathan Bangert"
-	description="Jonathan Bangerts personal website"
-/>
+<MetaTags title="Jonathan Bangert" description="Jonathan Bangerts personal website" />
