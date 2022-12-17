@@ -4,7 +4,7 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="min-h-screen">
+<div style="height: 94.5vh;">
 	<Navbar />
 	<slot />
 	
