@@ -5,6 +5,10 @@
 	import { MetaTags, JsonLd } from 'svelte-meta-tags';
 </script>
 
+<svelte:head>
+	<title>Jonathan Bangert</title>
+</svelte:head>
+
 <div style="height: 94.5vh;">
 	<Navbar />
 	<slot />
