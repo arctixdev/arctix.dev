@@ -12,7 +12,7 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/'
+			base: dev ? '' : ''
 		}
 		// hydrate the <div id="svelte"> element in src/app.html
 	},
