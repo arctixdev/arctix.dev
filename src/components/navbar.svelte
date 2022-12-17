@@ -17,6 +17,7 @@
 		<ul class="flex">
 			<li class="flex-1 p-2 align-middle">
 				<input
+					aria-label="Toggle light and dark mode"
 					data-toggle-theme="dark,light"
 					data-act-class="ACTIVECLASS"
 					type="checkbox"
