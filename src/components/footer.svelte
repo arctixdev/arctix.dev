@@ -1,4 +1,4 @@
-<footer class="footer items-center p-4 bg-neutral text-neutral-content bottom-0 align-bottom">
+<footer class="footer items-center p-4 bg-neutral text-neutral-content bottom-0 align-bottom sticky top-[100vh]">
 	<div class="items-center grid-flow-col">
 		<svg
 			width="36"

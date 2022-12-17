@@ -1,3 +1,11 @@
+<script>
+    import { onMount } from 'svelte'
+	import { themeChange } from 'theme-change'
+	onMount(() => {
+  		themeChange(false)
+	})
+</script>
+
 <div class="navbar bg-base-200 flex sticky top-0 h-10 z-50 gap-5">
 	<div class="navbar-start">
 		<a href="/">uhei</a>
@@ -8,7 +16,7 @@
 	<div class="navbar-end">
         <ul class="flex">
             <li class="flex-1 p-2 align-middle">
-                <input type="checkbox" class="toggle align-middle" checked />
+                <input data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" type="checkbox" class="toggle align-middle" checked />
             </li>
             <li class="flex-1 justify-between">
                 <a href="/blog" class="btn normal-case text-xl text-center">Blog</a>
