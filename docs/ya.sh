@@ -1,2 +1,2 @@
-touch .nojekyll
-echo "jonathanbangert.com" > CNAME
+touch docs/.nojekyll
+echo "jonathanbangert.com" > docs/CNAME
