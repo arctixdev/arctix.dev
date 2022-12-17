@@ -1,15 +1,21 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import adapter from "@sveltejs/adapter-static"; 
+// was "@sveltejs/adapter-auto"
 
-/** @type {import('@sveltejs/kit').Config} */
+const dev = "production" === "development";
+
+/** @type {import(""@sveltejs/kit").Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: vitePreprocess(),
-
-	kit: {
-		adapter: adapter()
-	}
+    kit: {
+        adapter: adapter({
+            pages: "docs",
+            assets: "docs"
+        }),
+        paths: {
+            base: dev ? "" : "/Un10ck3d.github.io",
+        },
+        // hydrate the <div id="svelte"> element in src/app.html
+    }
 };
 
 export default config;
+
