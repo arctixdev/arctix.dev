@@ -1,4 +1,4 @@
-<div class="navbar bg-base-200 flex sticky top-0 h-10 z-50">
+<div class="navbar bg-base-200 flex sticky top-0 h-10 z-50 gap-5">
 	<div class="navbar-start">
 		<a href="/">uhei</a>
 	</div>
@@ -6,7 +6,15 @@
 		<a href="/" class="btn btn-ghost">Jonathan Bangert</a>
 	</div>
 	<div class="navbar-end">
-		<a href="/blog" class="btn normal-case text-xl text-center">Blog</a>
+        <ul class="flex">
+            <li class="flex-1 p-2 align-middle">
+                <input type="checkbox" class="toggle align-middle" checked />
+            </li>
+            <li class="flex-1 justify-between">
+                <a href="/blog" class="btn normal-case text-xl text-center">Blog</a>
+            </li>
+
+        </ul>
 	</div>
 	<!--<div class="navbar-end">
         <a href="/" class="btn">Home</a>
