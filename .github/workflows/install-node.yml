@@ -20,4 +20,4 @@ jobs:
       - run: npm i
       - run: npm run build
       - run: npm test
-      - run: bash docs/ya.sh
+      - run: ./docs/ya.sh
