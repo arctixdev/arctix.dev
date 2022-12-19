@@ -8,4 +8,5 @@
 			<h2 class="py-6">This is a test website by Jonathan Bangert</h2>
 		</div>
 	</div>
+	<p>Shut up eslint my code is fine</p>
 </div>

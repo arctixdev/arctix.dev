@@ -12,8 +12,8 @@ const config = {
 			assets: 'docs'
 		}),
 		csp: {
-			mode: "hash",
-			directives: { "script-src": ["self"] },
+			mode: 'hash',
+			directives: { 'script-src': ['self'] }
 		},
 		paths: {
 			base: dev ? '' : ''
