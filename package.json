@@ -2,8 +2,10 @@
 	"name": "un10ck3d.github.io",
 	"version": "0.0.1",
 	"private": true,
+	"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs",
 	"scripts": {
 		"dev": "vite dev",
+		"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs",
 		"build": "vite build && touch docs/.nojekyll && echo 'jonathanbangert.com' > docs/CNAME",
 		"preview": "vite preview",
 		"test": "jest --passWithNoTests",
@@ -37,6 +39,7 @@
 		"svelte-check": "^2.10.2",
 		"svelte-jester": "^2.3.2",
 		"svelte-preprocess": "^5.0.0",
+		"svelte-sitemap": "^2.5.4",
 		"tailwindcss": "^3.2.4",
 		"ts-jest": "^29.0.3",
 		"tslib": "^2.4.1",
