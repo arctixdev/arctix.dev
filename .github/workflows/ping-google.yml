@@ -2,7 +2,7 @@ name: Ping Google about updated sitemap
 
 on:
   push:
-    branches: [ master ]
+    branches: [ site ]
 
 jobs:
   ping:
@@ -11,5 +11,4 @@ jobs:
 
     steps:
       - name: Send HTTP GET request
-        # Example: `curl http://www.google.com/ping?sitemap=https://www.example.com/sitemap.xml`
         run: curl http://www.google.com/ping?sitemap=https://jonathanbangert.com/sitemap.xml
