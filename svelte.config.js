@@ -11,6 +11,10 @@ const config = {
 			pages: 'docs',
 			assets: 'docs'
 		}),
+		csp: {
+			mode: "hash",
+			directives: { "script-src": ["self"] },
+		},
 		paths: {
 			base: dev ? '' : ''
 		}

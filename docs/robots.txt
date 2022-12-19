@@ -1,3 +1,4 @@
 # Release the robots!
 User-agent: *
 Disallow:
+sitemap: https://jonathanbangert.com/sitemap.xml
