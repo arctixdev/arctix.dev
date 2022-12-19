@@ -1,0 +1,1 @@
+lighthouse http://localhost:4173/ --view

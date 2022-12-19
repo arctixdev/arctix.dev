@@ -1,0 +1,10 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
