@@ -1,12 +1,12 @@
 {
-	"short_name": "Jonathans Website",
+	"short_name": "Jonathan's Website",
 	"name": "Jonathan Bangert's Website!",
 	"start_url": "/",
 	"icons": [
 		{
 			"src": "favicon.png",
 			"type": "image/png",
-			"sizes": "128x128",
+			"sizes": "512x512",
 			"purpose": "any maskable"
 		}
 	],
@@ -15,5 +15,6 @@
 	"scope": "/",
 	"theme_color": "#242933",
 	"shortcuts": [],
-	"description": "Jonathan Bangerts personal portfolio or website"
+	"description": "Jonathan Bangerts personal portfolio or website",
+	"prefer_related_applications": false
 }
