@@ -2,7 +2,8 @@
 	class="footer items-center p-4 bg-neutral text-neutral-content bottom-0 align-bottom sticky top-[100vh]"
 >
 	<div class="items-center grid-flow-col">
-		<svg aria-label="Rotated hashtag"
+		<svg
+			aria-label="Rotated hashtag"
 			width="36"
 			height="36"
 			viewBox="0 0 24 24"
@@ -42,7 +43,7 @@
 			></a
 		>
 		<a href="/blog" aria-label="Discord">
-			<i class="bi bi-discord"></i>
+			<i class="bi bi-discord" />
 		</a>
 	</div>
 </footer>

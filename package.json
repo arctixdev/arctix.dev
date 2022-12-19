@@ -2,10 +2,10 @@
 	"name": "un10ck3d.github.io",
 	"version": "0.0.1",
 	"private": true,
-	"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs",
+	"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs --reset-time --change-freq daily",
 	"scripts": {
 		"dev": "vite dev",
-		"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs",
+		"postbuild": "npx svelte-sitemap --domain https://jonathanbangert.com --out-dir docs --reset-time --change-freq daily",
 		"build": "vite build && touch docs/.nojekyll && echo 'jonathanbangert.com' > docs/CNAME",
 		"preview": "vite preview",
 		"test": "jest --passWithNoTests",
