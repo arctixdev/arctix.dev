@@ -1,55 +1,195 @@
-const h = [
+const d = [
   "/_app/immutable/assets/_layout-3a1d9b33.css",
+  "/_app/immutable/chunks/0-199c931b.js",
+  "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
+  "/_app/immutable/chunks/1-e8faf203.js",
   "/_app/immutable/chunks/2-827f7cec.js",
   "/_app/immutable/chunks/3-93ec4956.js",
-  "/_app/immutable/chunks/1-e8faf203.js",
-  "/_app/immutable/components/error.svelte-3822045b.js",
-  "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
   "/_app/immutable/chunks/singletons-b9bb3064.js",
-  "/_app/immutable/chunks/0-199c931b.js",
+  "/_app/immutable/components/error.svelte-3822045b.js",
   "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
   "/_app/immutable/chunks/index-f5c3c3e4.js",
   "/_app/immutable/start-d3adbb1e.js",
   "/_app/immutable/components/pages/_layout.svelte-7a73a8f7.js"
-], r = [
+], c = [
+  "/android/android-launchericon-144-144.png",
+  "/android/android-launchericon-192-192.png",
+  "/android/android-launchericon-48-48.png",
+  "/android/android-launchericon-512-512.png",
+  "/android/android-launchericon-72-72.png",
+  "/android/android-launchericon-96-96.png",
   "/favicon.png",
+  "/ios/100.png",
+  "/ios/1024.png",
+  "/ios/114.png",
+  "/ios/120.png",
+  "/ios/128.png",
+  "/ios/144.png",
+  "/ios/152.png",
+  "/ios/16.png",
+  "/ios/167.png",
+  "/ios/180.png",
+  "/ios/192.png",
+  "/ios/20.png",
+  "/ios/256.png",
+  "/ios/29.png",
+  "/ios/32.png",
+  "/ios/40.png",
+  "/ios/50.png",
+  "/ios/512.png",
+  "/ios/57.png",
+  "/ios/58.png",
+  "/ios/60.png",
+  "/ios/64.png",
+  "/ios/72.png",
+  "/ios/76.png",
+  "/ios/80.png",
+  "/ios/87.png",
   "/manifest.json",
   "/personal.css",
-  "/robots.txt"
-], o = "1671566225958", a = self, i = `cache${o}`, p = h.concat(r), m = new Set(p);
-a.addEventListener("install", (t) => {
-  t.waitUntil(
-    caches.open(i).then((e) => e.addAll(p)).then(() => {
-      a.skipWaiting();
+  "/robots.txt",
+  "/windows11/LargeTile.scale-100.png",
+  "/windows11/LargeTile.scale-125.png",
+  "/windows11/LargeTile.scale-150.png",
+  "/windows11/LargeTile.scale-200.png",
+  "/windows11/LargeTile.scale-400.png",
+  "/windows11/SmallTile.scale-100.png",
+  "/windows11/SmallTile.scale-125.png",
+  "/windows11/SmallTile.scale-150.png",
+  "/windows11/SmallTile.scale-200.png",
+  "/windows11/SmallTile.scale-400.png",
+  "/windows11/SplashScreen.scale-100.png",
+  "/windows11/SplashScreen.scale-125.png",
+  "/windows11/SplashScreen.scale-150.png",
+  "/windows11/SplashScreen.scale-200.png",
+  "/windows11/SplashScreen.scale-400.png",
+  "/windows11/Square150x150Logo.scale-100.png",
+  "/windows11/Square150x150Logo.scale-125.png",
+  "/windows11/Square150x150Logo.scale-150.png",
+  "/windows11/Square150x150Logo.scale-200.png",
+  "/windows11/Square150x150Logo.scale-400.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-16.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-20.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-24.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-256.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-30.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-32.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-36.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-40.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-44.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-48.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-60.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-64.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-72.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-80.png",
+  "/windows11/Square44x44Logo.altform-lightunplated_targetsize-96.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-16.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-20.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-24.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-256.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-30.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-32.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-36.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-40.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-44.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-48.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-60.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-64.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-72.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-80.png",
+  "/windows11/Square44x44Logo.altform-unplated_targetsize-96.png",
+  "/windows11/Square44x44Logo.scale-100.png",
+  "/windows11/Square44x44Logo.scale-125.png",
+  "/windows11/Square44x44Logo.scale-150.png",
+  "/windows11/Square44x44Logo.scale-200.png",
+  "/windows11/Square44x44Logo.scale-400.png",
+  "/windows11/Square44x44Logo.targetsize-16.png",
+  "/windows11/Square44x44Logo.targetsize-20.png",
+  "/windows11/Square44x44Logo.targetsize-24.png",
+  "/windows11/Square44x44Logo.targetsize-256.png",
+  "/windows11/Square44x44Logo.targetsize-30.png",
+  "/windows11/Square44x44Logo.targetsize-32.png",
+  "/windows11/Square44x44Logo.targetsize-36.png",
+  "/windows11/Square44x44Logo.targetsize-40.png",
+  "/windows11/Square44x44Logo.targetsize-44.png",
+  "/windows11/Square44x44Logo.targetsize-48.png",
+  "/windows11/Square44x44Logo.targetsize-60.png",
+  "/windows11/Square44x44Logo.targetsize-64.png",
+  "/windows11/Square44x44Logo.targetsize-72.png",
+  "/windows11/Square44x44Logo.targetsize-80.png",
+  "/windows11/Square44x44Logo.targetsize-96.png",
+  "/windows11/StoreLogo.scale-100.png",
+  "/windows11/StoreLogo.scale-125.png",
+  "/windows11/StoreLogo.scale-150.png",
+  "/windows11/StoreLogo.scale-200.png",
+  "/windows11/StoreLogo.scale-400.png",
+  "/windows11/Wide310x150Logo.scale-100.png",
+  "/windows11/Wide310x150Logo.scale-125.png",
+  "/windows11/Wide310x150Logo.scale-150.png",
+  "/windows11/Wide310x150Logo.scale-200.png",
+  "/windows11/Wide310x150Logo.scale-400.png"
+], g = "1671643771352", s = self, r = `cache${g}`, p = d.concat(c), u = new Set(p);
+s.addEventListener("install", (e) => {
+  e.waitUntil(
+    caches.open(r).then((o) => o.addAll(p)).then(() => {
+      s.skipWaiting();
     })
   );
 });
-a.addEventListener("activate", (t) => {
-  t.waitUntil(
-    caches.keys().then(async (e) => {
-      for (const s of e)
-        s !== i && await caches.delete(s);
-      a.clients.claim();
+s.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then(async (o) => {
+      for (const a of o)
+        a !== r && await caches.delete(a);
+      s.clients.claim();
     })
   );
 });
-async function u(t) {
-  const e = await caches.open(`offline${o}`);
+async function h(e) {
+  const o = await caches.open(`offline${g}`);
   try {
-    const s = await fetch(t);
-    return e.put(t, s.clone()), s;
-  } catch (s) {
-    const c = await e.match(t);
-    if (c)
-      return c;
-    throw s;
+    const a = await fetch(e);
+    return o.put(e, a.clone()), a;
+  } catch (a) {
+    const n = await o.match(e);
+    if (n)
+      return n;
+    throw a;
   }
 }
-a.addEventListener("fetch", (t) => {
-  if (t.request.method !== "GET" || t.request.headers.has("range"))
+s.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const e = new URL(t.request.url), s = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && m.has(e.pathname), l = t.request.cache === "only-if-cached" && !n;
-  s && !c && !l && t.respondWith(
-    (async () => n && await caches.match(t.request) || u(t.request))()
+  const o = new URL(e.request.url), a = o.protocol.startsWith("http"), n = o.hostname === self.location.hostname && o.port !== self.location.port, i = o.host === self.location.host && u.has(o.pathname), w = e.request.cache === "only-if-cached" && !i;
+  a && !n && !w && e.respondWith(
+    (async () => i && await caches.match(e.request) || h(e.request))()
+  );
+});
+const t = "pwabuilder-offline-page";
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js");
+const l = "offline";
+self.addEventListener("message", (e) => {
+  e.data && e.data.type === "SKIP_WAITING" && self.skipWaiting();
+});
+self.addEventListener("install", async (e) => {
+  e.waitUntil(caches.open(t).then((o) => o.add(l)));
+});
+workbox.navigationPreload.isSupported() && workbox.navigationPreload.enable();
+workbox.routing.registerRoute(
+  new RegExp("/*"),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: t
+  })
+);
+self.addEventListener("fetch", (e) => {
+  e.request.mode === "navigate" && e.respondWith(
+    (async () => {
+      try {
+        const o = await e.preloadResponse;
+        return o || await fetch(e.request);
+      } catch {
+        return await (await caches.open(t)).match(l);
+      }
+    })()
   );
 });
