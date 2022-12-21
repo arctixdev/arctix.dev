@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 
 import { build, files, version } from '$service-worker';
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+const workbox = importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 const worker = self as unknown as ServiceWorkerGlobalScope;
 const FILES = `cache${version}`;
@@ -36,7 +36,7 @@ if (workbox.navigationPreload.isSupported()) {
 workbox.routing.registerRoute(
 	new RegExp('/*'),
 	new workbox.strategies.StaleWhileRevalidate({
-		cacheName: CACHE
+		cacheName: FILES
 	})
 );
 
@@ -109,7 +109,7 @@ worker.addEventListener('fetch', (event) => {
 					const networkResp = await fetch(event.request);
 					return networkResp;
 				} catch (error) {
-					const cache = await caches.open(CACHE);
+					const cache = await caches.open(FILES);
 					const cachedResp = await cache.match(offlineFallbackPage);
 					return cachedResp;
 				}
