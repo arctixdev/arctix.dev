@@ -1,19 +1,19 @@
-const c = [
+const l = [
   "/_app/immutable/assets/_layout-3a1d9b33.css",
-  "/_app/immutable/chunks/2-827f7cec.js",
-  "/_app/immutable/chunks/0-199c931b.js",
   "/_app/immutable/chunks/4-fd1164eb.js",
-  "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
-  "/_app/immutable/chunks/3-93ec4956.js",
-  "/_app/immutable/chunks/singletons-b9bb3064.js",
   "/_app/immutable/chunks/1-e8faf203.js",
-  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
+  "/_app/immutable/chunks/3-93ec4956.js",
   "/_app/immutable/components/error.svelte-3822045b.js",
   "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
+  "/_app/immutable/chunks/0-65b18f0e.js",
+  "/_app/immutable/chunks/2-827f7cec.js",
+  "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
+  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
+  "/_app/immutable/chunks/singletons-b9bb3064.js",
   "/_app/immutable/chunks/index-f5c3c3e4.js",
-  "/_app/immutable/start-846f4acb.js",
-  "/_app/immutable/components/pages/_layout.svelte-7a73a8f7.js"
-], u = [
+  "/_app/immutable/start-9b06abc4.js",
+  "/_app/immutable/components/pages/_layout.svelte-9cb5eb24.js"
+], w = [
   "/android/android-launchericon-144-144.png",
   "/android/android-launchericon-192-192.png",
   "/android/android-launchericon-48-48.png",
@@ -130,59 +130,40 @@ const c = [
   "/windows11/Wide310x150Logo.scale-150.png",
   "/windows11/Wide310x150Logo.scale-200.png",
   "/windows11/Wide310x150Logo.scale-400.png"
-], p = "1671644721761", i = importScripts("https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"), n = self, g = `cache${p}`, S = "offline", l = c.concat(u), m = new Set(l);
-self.addEventListener("message", (e) => {
-  e.data && e.data.type === "SKIP_WAITING" && self.skipWaiting();
-});
-n.addEventListener("install", (e) => {
+], i = "1671653385659", a = self, g = `cache${i}`, r = l.concat(w), d = new Set(r);
+a.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(g).then((o) => o.addAll(l)).then(() => {
-      n.skipWaiting();
+    caches.open(g).then((o) => o.addAll(r)).then(() => {
+      a.skipWaiting();
     })
   );
 });
-i.navigationPreload.isSupported() && i.navigationPreload.enable();
-i.routing.registerRoute(
-  new RegExp("/*"),
-  new i.strategies.StaleWhileRevalidate({
-    cacheName: g
-  })
-);
-n.addEventListener("activate", (e) => {
+a.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (o) => {
-      for (const a of o)
-        a !== g && await caches.delete(a);
-      n.clients.claim();
+      for (const n of o)
+        n !== g && await caches.delete(n);
+      a.clients.claim();
     })
   );
 });
-async function h(e) {
-  const o = await caches.open(`offline${p}`);
+async function c(e) {
+  const o = await caches.open(`offline${i}`);
   try {
-    const a = await fetch(e);
-    return o.put(e, a.clone()), a;
-  } catch (a) {
+    const n = await fetch(e);
+    return o.put(e, n.clone()), n;
+  } catch (n) {
     const s = await o.match(e);
     if (s)
       return s;
-    throw a;
+    throw n;
   }
 }
-n.addEventListener("fetch", (e) => {
+a.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const o = new URL(e.request.url), a = o.protocol.startsWith("http"), s = o.hostname === self.location.hostname && o.port !== self.location.port, r = o.host === self.location.host && m.has(o.pathname), w = e.request.cache === "only-if-cached" && !r;
-  a && !s && !w && e.respondWith(
-    (async () => r && await caches.match(e.request) || h(e.request))()
-  ), e.request.mode === "navigate" && e.respondWith(
-    (async () => {
-      try {
-        const t = await e.preloadResponse;
-        return t || await fetch(e.request);
-      } catch {
-        return await (await caches.open(g)).match(S);
-      }
-    })()
+  const o = new URL(e.request.url), n = o.protocol.startsWith("http"), s = o.hostname === self.location.hostname && o.port !== self.location.port, t = o.host === self.location.host && d.has(o.pathname), p = e.request.cache === "only-if-cached" && !t;
+  n && !s && !p && e.respondWith(
+    (async () => t && await caches.match(e.request) || c(e.request))()
   );
 });
