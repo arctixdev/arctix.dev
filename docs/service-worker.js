@@ -1,19 +1,19 @@
-const d = [
+const c = [
   "/_app/immutable/assets/_layout-3a1d9b33.css",
-  "/_app/immutable/chunks/0-199c931b.js",
-  "/_app/immutable/chunks/1-e8faf203.js",
-  "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
-  "/_app/immutable/chunks/singletons-b9bb3064.js",
-  "/_app/immutable/components/error.svelte-3822045b.js",
   "/_app/immutable/chunks/2-827f7cec.js",
+  "/_app/immutable/chunks/0-199c931b.js",
   "/_app/immutable/chunks/4-fd1164eb.js",
-  "/_app/immutable/chunks/3-93ec4956.js",
-  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
-  "/_app/immutable/chunks/index-f5c3c3e4.js",
   "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
+  "/_app/immutable/chunks/3-93ec4956.js",
+  "/_app/immutable/chunks/singletons-b9bb3064.js",
+  "/_app/immutable/chunks/1-e8faf203.js",
+  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
+  "/_app/immutable/components/error.svelte-3822045b.js",
+  "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
+  "/_app/immutable/chunks/index-f5c3c3e4.js",
   "/_app/immutable/start-846f4acb.js",
   "/_app/immutable/components/pages/_layout.svelte-7a73a8f7.js"
-], c = [
+], u = [
   "/android/android-launchericon-144-144.png",
   "/android/android-launchericon-192-192.png",
   "/android/android-launchericon-48-48.png",
@@ -130,37 +130,35 @@ const d = [
   "/windows11/Wide310x150Logo.scale-150.png",
   "/windows11/Wide310x150Logo.scale-200.png",
   "/windows11/Wide310x150Logo.scale-400.png"
-], g = "1671644402026";
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js");
-const n = self, r = `cache${g}`, u = "offline", p = d.concat(c), S = new Set(p);
+], p = "1671644721761", i = importScripts("https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"), n = self, g = `cache${p}`, S = "offline", l = c.concat(u), m = new Set(l);
 self.addEventListener("message", (e) => {
   e.data && e.data.type === "SKIP_WAITING" && self.skipWaiting();
 });
 n.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(r).then((o) => o.addAll(p)).then(() => {
+    caches.open(g).then((o) => o.addAll(l)).then(() => {
       n.skipWaiting();
     })
   );
 });
-workbox.navigationPreload.isSupported() && workbox.navigationPreload.enable();
-workbox.routing.registerRoute(
+i.navigationPreload.isSupported() && i.navigationPreload.enable();
+i.routing.registerRoute(
   new RegExp("/*"),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
+  new i.strategies.StaleWhileRevalidate({
+    cacheName: g
   })
 );
 n.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (o) => {
       for (const a of o)
-        a !== r && await caches.delete(a);
+        a !== g && await caches.delete(a);
       n.clients.claim();
     })
   );
 });
-async function m(e) {
-  const o = await caches.open(`offline${g}`);
+async function h(e) {
+  const o = await caches.open(`offline${p}`);
   try {
     const a = await fetch(e);
     return o.put(e, a.clone()), a;
@@ -174,16 +172,16 @@ async function m(e) {
 n.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const o = new URL(e.request.url), a = o.protocol.startsWith("http"), s = o.hostname === self.location.hostname && o.port !== self.location.port, i = o.host === self.location.host && S.has(o.pathname), l = e.request.cache === "only-if-cached" && !i;
-  a && !s && !l && e.respondWith(
-    (async () => i && await caches.match(e.request) || m(e.request))()
+  const o = new URL(e.request.url), a = o.protocol.startsWith("http"), s = o.hostname === self.location.hostname && o.port !== self.location.port, r = o.host === self.location.host && m.has(o.pathname), w = e.request.cache === "only-if-cached" && !r;
+  a && !s && !w && e.respondWith(
+    (async () => r && await caches.match(e.request) || h(e.request))()
   ), e.request.mode === "navigate" && e.respondWith(
     (async () => {
       try {
         const t = await e.preloadResponse;
         return t || await fetch(e.request);
       } catch {
-        return await (await caches.open(CACHE)).match(u);
+        return await (await caches.open(g)).match(S);
       }
     })()
   );
