@@ -1,15 +1,15 @@
 const l = [
   "/_app/immutable/assets/_layout-3a1d9b33.css",
-  "/_app/immutable/chunks/4-fd1164eb.js",
-  "/_app/immutable/chunks/1-e8faf203.js",
   "/_app/immutable/chunks/3-93ec4956.js",
   "/_app/immutable/components/error.svelte-3822045b.js",
-  "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
-  "/_app/immutable/chunks/0-65b18f0e.js",
-  "/_app/immutable/chunks/2-827f7cec.js",
+  "/_app/immutable/chunks/1-e8faf203.js",
+  "/_app/immutable/chunks/4-fd1164eb.js",
   "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
-  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
   "/_app/immutable/chunks/singletons-b9bb3064.js",
+  "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
+  "/_app/immutable/chunks/2-827f7cec.js",
+  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
+  "/_app/immutable/chunks/0-65b18f0e.js",
   "/_app/immutable/chunks/index-f5c3c3e4.js",
   "/_app/immutable/start-9b06abc4.js",
   "/_app/immutable/components/pages/_layout.svelte-9cb5eb24.js"
@@ -130,7 +130,7 @@ const l = [
   "/windows11/Wide310x150Logo.scale-150.png",
   "/windows11/Wide310x150Logo.scale-200.png",
   "/windows11/Wide310x150Logo.scale-400.png"
-], i = "1671653385659", a = self, g = `cache${i}`, r = l.concat(w), d = new Set(r);
+], i = "1671695791838", a = self, g = `cache${i}`, r = l.concat(w), d = new Set(r);
 a.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(g).then((o) => o.addAll(r)).then(() => {
