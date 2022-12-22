@@ -28,6 +28,10 @@
 			<li class="flex-1 justify-between">
 				<a href="/blog" class="btn normal-case text-xl text-center">Blog</a>
 			</li>
+			<br>
+			<li class="flex-1 justify-between">
+				<a href="/countdown" class="btn btn-ghost normal-case text-xl text-center">Countdown</a>
+			</li>
 		</ul>
 	</div>
 	<!--<div class="navbar-end">
