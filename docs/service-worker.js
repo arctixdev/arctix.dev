@@ -1,21 +1,21 @@
 const l = [
-  "/_app/immutable/assets/_layout-969cddea.css",
-  "/_app/immutable/chunks/2-827f7cec.js",
-  "/_app/immutable/chunks/3-93ec4956.js",
-  "/_app/immutable/components/error.svelte-b1dc410b.js",
-  "/_app/immutable/chunks/5-fd1164eb.js",
-  "/_app/immutable/chunks/1-f01963d5.js",
-  "/_app/immutable/chunks/index-67a8247a.js",
-  "/_app/immutable/components/pages/countdown/_page.svelte-2af835eb.js",
-  "/_app/immutable/chunks/0-2633c01e.js",
-  "/_app/immutable/components/pages/offline/_page.svelte-bcd29b3d.js",
-  "/_app/immutable/components/pages/blog/_page.svelte-76086062.js",
-  "/_app/immutable/chunks/4-b9349273.js",
-  "/_app/immutable/chunks/singletons-cf7bc90e.js",
-  "/_app/immutable/components/pages/_page.svelte-d6267a99.js",
-  "/_app/immutable/chunks/index-f5c3c3e4.js",
-  "/_app/immutable/start-e11a35b4.js",
-  "/_app/immutable/components/pages/_layout.svelte-bdf8a2c3.js"
+  "/_app/immutable/assets/_layout-5b942aac.css",
+  "/_app/immutable/chunks/0-d3cbe5cb.js",
+  "/_app/immutable/chunks/1-c05a9e41.js",
+  "/_app/immutable/chunks/2-4eb88197.js",
+  "/_app/immutable/chunks/4-129bb45f.js",
+  "/_app/immutable/components/error.svelte-60d6036a.js",
+  "/_app/immutable/components/pages/blog/_page.svelte-6e565221.js",
+  "/_app/immutable/components/pages/offline/_page.svelte-ea36aa92.js",
+  "/_app/immutable/components/pages/_page.svelte-9d0eda73.js",
+  "/_app/immutable/chunks/5-4b8c59c7.js",
+  "/_app/immutable/chunks/3-dcc3fd86.js",
+  "/_app/immutable/chunks/index-5366bde9.js",
+  "/_app/immutable/components/pages/countdown/_page.svelte-6b9c2346.js",
+  "/_app/immutable/chunks/singletons-b4d30c92.js",
+  "/_app/immutable/chunks/index-4e7dcb30.js",
+  "/_app/immutable/start-55b6f957.js",
+  "/_app/immutable/components/pages/_layout.svelte-911196b1.js"
 ], w = [
   "/android/android-launchericon-144-144.png",
   "/android/android-launchericon-192-192.png",
@@ -133,7 +133,7 @@ const l = [
   "/windows11/Wide310x150Logo.scale-150.png",
   "/windows11/Wide310x150Logo.scale-200.png",
   "/windows11/Wide310x150Logo.scale-400.png"
-], i = "1671741801185", n = self, g = `cache${i}`, p = l.concat(w), d = new Set(p);
+], i = "1671796967618", n = self, g = `cache${i}`, p = l.concat(w), d = new Set(p);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(g).then((o) => o.addAll(p)).then(() => {
