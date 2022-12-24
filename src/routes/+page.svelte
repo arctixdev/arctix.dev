@@ -4,9 +4,8 @@
 			<br />
 			<br />
 			<br />
-			<h1 class="text-7xl font-bold">Welcome to my website!</h1>
+			<h1 class="text-4xl sm:text-7xl font-bold">Welcome to my website!</h1>
 			<h2 class="py-6">This is a test website by Jonathan Bangert</h2>
 		</div>
 	</div>
-	<p>Shut up eslint my code is fine</p>
 </div>
