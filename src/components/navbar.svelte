@@ -52,9 +52,6 @@
 			<li class="flex-1 justify-between hidden sm:block">
 				<a href="/blog" class="btn normal-case text-xl text-center">Blog</a>
 			</li>
-			<li class="flex-1 justify-between hidden sm:block">
-				<a href="/countdown" class="btn btn-ghost normal-case text-xl text-center">Countdown</a>
-			</li>
 		</ul>
 	</div>
 	<!--<div class="navbar-end">
