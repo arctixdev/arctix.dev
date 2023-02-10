@@ -1,7 +1,15 @@
 <script>
 	import '../app.postcss';
+	import '../global.css';
 	import { MetaTags } from 'svelte-meta-tags';
+	import "@fontsource/roboto";
 </script>
+
+<style>
+	slot {
+    	font-family: 'Roboto', sans-serif;
+  	}
+</style>
 
 <svelte:head>
 	<title>Jonathan Bangert</title>

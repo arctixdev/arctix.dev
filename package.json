@@ -49,6 +49,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/roboto": "^4.5.8",
 		"bootstrap-icons": "^1.10.3",
 		"jest-environment-jsdom": "^29.4.2",
 		"svelte-meta-tags": "^2.6.5",
