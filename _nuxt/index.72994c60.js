@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c,a as n}from"./entry.744a9516.js";const o={},s=n("h1",{class:"text-center font-bold text-6xl py-10 text-text-main"},"Under construction... 🚧🚧🚧",-1),r=[s];function a(_,d){return c(),t("div",null,r)}const l=e(o,[["render",a]]);export{l as default};
