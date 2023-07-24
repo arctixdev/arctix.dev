@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-icon', '@nuxt/image'],
   css: ['@/assets/css/main.css'],
   googleFonts: {
     download: true,
@@ -14,7 +14,21 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      script: ['https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js']
-    }
+      title: "Jonathan Bangert",
+      meta: [
+        {
+          'name': 'description',
+          'content': 'Jonathan Bangerts personal website'
+        },
+        {
+          'name': 'theme-color',
+          'content': '#272727',
+        }
+      ],
+      script: ['https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'],
+      htmlAttrs: {
+        lang: 'en'
+      },
+    },
   },
 })
