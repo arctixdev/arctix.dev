@@ -1,6 +1,9 @@
 <template>
-    <div>
-      <p>heh</p>
-      <slot />
+    <div class="min-h-screen">
+      <BaseNavbar />
+      <div class="px-6 overflow-hidden">
+            <slot />
+      </div>
+
     </div>
   </template>

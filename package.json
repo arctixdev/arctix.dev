@@ -14,10 +14,12 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "nuxt-icon": "^0.4.2"
   },
   "packageManager": "yarn@3.6.1",
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.2",
     "yarn": "^1.22.19"
   }
 }

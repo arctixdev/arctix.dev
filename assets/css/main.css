@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-main
+}
+
+h2 {
+    @apply text-text-main;
+    cursor: default;
+}
+
+h1 {
+    @apply text-text-main;
+    cursor: default;
+}
+
+text {
+    @apply text-text-main;
+    cursor: default;
+}
+
+p {
+    @apply text-text-main;
+    cursor: default;
+}
+
+h4 {
+    @apply text-text-main;
+    cursor: default;
+}
+
+h3 {
+    @apply text-text-main;
+    cursor: default;
+}
+
+.showcase {
+    @apply bg-secondary rounded-xl mx-auto p-3 w-full sm:w-11/12 lg:w-8/12 md:w-10/12 xl:w-6/12 2xl:w-5/12 h-auto;
+}
+ 
+.showcase-pic {
+    min-width: 50%;
+    width: auto;
+}
+
+.hidden-mobile {
+    @apply hidden sm:flex ;
+}
+
+.hidden-mobile-inline {
+    @apply hidden sm:inline-block;
+}
+
+.only-mobile {
+    @apply inline-block sm:hidden !important;
+}
