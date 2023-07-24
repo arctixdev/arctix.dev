@@ -9,13 +9,14 @@
 </template>
 
 <script>
+  import gsap from 'gsap';
   export default { 
     mounted: () => {
       let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let interval = null;
         let circle = this.document.getElementById('circle');
         circle.classList.remove('hidden');
-        this.document.querySelectorAll('[id=hacker-animation]').forEach(text => {
+        this.document.querySelectorAll('[class=hacker-animation]').forEach(text => {
           text.onmouseover = event => {  
             let iteration = 0;
 

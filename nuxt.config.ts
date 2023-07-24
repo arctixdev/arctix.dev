@@ -25,10 +25,12 @@ export default defineNuxtConfig({
           'content': '#272727',
         }
       ],
-      script: ['https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'],
       htmlAttrs: {
         lang: 'en'
       },
     },
+  },
+  build: {
+    transpile: ['gsap'],
   },
 })
