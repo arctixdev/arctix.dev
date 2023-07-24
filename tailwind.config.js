@@ -16,7 +16,8 @@ module.exports = {
         'text-secondary': '#BFBFBF',
       },
       fontFamily: {
-        sans: ["Work Sans", "sans-serif"]
+        sans: ["Work Sans", "sans-serif"],
+        hmm: ['JetBrains Mono', "sans-serif"],
       },
       extend: {},
     },

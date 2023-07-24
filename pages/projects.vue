@@ -6,8 +6,8 @@
                 <div class="my-auto mr-2">
                     <svg width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="50" height="50" rx="10" fill="black"/>
-                        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono Medium" font-size="25" font-weight="500" letter-spacing="-0.075em"><tspan x="19" y="34.5">/\</tspan></text>
-                        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono Medium" font-size="25" font-weight="500" letter-spacing="-0.375em"><tspan x="-1" y="34.5">|||</tspan></text>
+                        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" class="font-hmm" font-size="25" font-weight="500" letter-spacing="-0.075em"><tspan x="19" y="34.5">/\</tspan></text>
+                        <text fill="white" xml:space="preserve" style="white-space: pre" font-family="JetBrains Mono" class="font-hmm" font-size="25" font-weight="500" letter-spacing="-0.375em"><tspan x="-1" y="34.5">|||</tspan></text>
                     </svg>
                 </div>
                 <h1 class="text-xl sm:text-4xl my-auto">Music Assistant</h1>

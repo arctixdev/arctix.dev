@@ -8,8 +8,8 @@ export default defineNuxtConfig({
     download: true,
     inject: true,
     families: {
-      'Work+Sans:wght@100;200;300;400;500;600;700;800;900': true,
-      'JetBrains+Mono:wght@500': true,
+      'Work+Sans:wght@400;500': true,
+      'JetBrains+Mono:wght@400;500': true,
     }
   },
   app: {
@@ -33,4 +33,4 @@ export default defineNuxtConfig({
   build: {
     transpile: ['gsap'],
   },
-})
+});
