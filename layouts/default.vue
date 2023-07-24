@@ -14,43 +14,44 @@
     mounted: () => {
       let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let interval = null;
-        let circle = this.document.getElementById('circle');
-        circle.classList.remove('hidden');
-        this.document.querySelectorAll('[class=hacker-animation]').forEach(text => {
-          text.onmouseover = event => {  
-            let iteration = 0;
-
-            clearInterval(interval);
+      let circle = this.document.getElementById('circle');
+      circle.classList.remove('hidden');
+      let texts = this.document.getElementsByClassName('hacker-animation');
+      for (var i = 0; i < texts.length; i++) {
+        let text = texts[i];
+        text.onmouseover = event => {  
+          let iteration = 0;
+          clearInterval(interval);
                   
-            interval = setInterval(() => {
-              event.target.innerText = event.target.innerText
-              .split("")
-              .map((letter, index) => {
-                if(index < iteration) {
-                  return event.target.dataset.value[index];
-                }
-                      
-                return letters[Math.floor(Math.random() * 26)]
-              })
-              .join("");
-                      
-              if(iteration >= event.target.dataset.value.length){ 
-                clearInterval(interval);
+          interval = setInterval(() => {
+            event.target.innerText = event.target.innerText
+            .split("")
+            .map((letter, index) => {
+              if(index < iteration) {
+                return event.target.dataset.value[index];
               }
                       
-              iteration += event.target.dataset.value.length / 12;
-            }, 40);
-          }
-        });
+              return letters[Math.floor(Math.random() * 26)]
+            })
+            .join("");
+                      
+            if(iteration >= event.target.dataset.value.length){ 
+              clearInterval(interval);
+            }
+                      
+            iteration += event.target.dataset.value.length / 12;
+          }, 40);
+        }
+      };
 
-        this.document.addEventListener('mousemove', function(e) {
-          gsap.to(circle, 0.2, {
-            css: {
-              left: e.pageX - 120,
-              top: e.pageY - 120,
-            },
-          });
+      this.document.addEventListener('mousemove', function(e) {
+        gsap.to(circle, 0.2, {
+          css: {
+            left: e.pageX - 120,
+            top: e.pageY - 120,
+          },
         });
+      });
     }
   }
 </script>
