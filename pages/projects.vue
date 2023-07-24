@@ -22,8 +22,7 @@
                 <p class="sm:mr-2 h-full 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <nuxt-picture format="avif,webp" class="rounded-lg hidden-mobile-inline showcase-pic" src="/mass.png" alt="Music Assistant layout" />
             </div>
-            <nuxt-picture format="avif,webp" class="mt-3 rounded-lg only-mobile" src="/mass.png" alt="Music Assistant layout" />
-
+            <nuxt-picture format="avif,webp" src="/mass.png" alt="Music Assistant layout" :imgAttrs="{class:'mt-3 rounded-lg only-mobile'}"/>
         </div>
     </div>
 </template>
