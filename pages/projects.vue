@@ -19,7 +19,7 @@
                 </NuxtLink>
             </div>
             <div class="flex overflow-hidden justify-between h-fit">
-                <p class="sm:mr-5 h-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="sm:mr-2 h-full 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <img class="rounded-lg hidden-mobile-inline showcase-pic" src="/assets/mass.png" alt="Music Assistant layout">
             </div>
             <img class="mt-3 rounded-lg only-mobile" src="/assets/mass.png" alt="Music Assistant layout">
