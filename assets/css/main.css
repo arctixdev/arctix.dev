@@ -22,7 +22,7 @@ text {
 }
 
 p {
-    @apply text-text-main;
+    @apply text-text-secondary;
     cursor: default;
 }
 

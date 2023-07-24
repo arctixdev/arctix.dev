@@ -10,5 +10,10 @@ export default defineNuxtConfig({
     families: {
       'Work+Sans:wght@100;200;300;400;500;600;700;800;900': true,
     }
+  },
+  app: {
+    head: {
+      script: ['/assets/main.js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js']
+    }
   }
 })

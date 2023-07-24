@@ -11,7 +11,7 @@
                     </svg>
                 </div>
                 <h1 class="text-xl sm:text-4xl my-auto">Music Assistant</h1>
-                <NuxtLink to="https://www.github.com/music-assistant/hass-music-assistant" class="my-auto transition ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:shadow-md rounded-xl">
+                <NuxtLink to="https://github.com/music-assistant" class="my-auto transition ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:shadow-md rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 71 71" fill="none">
                         <rect x="0.5" width="71" height="71" rx="15" fill="#797979"/>
                         <path d="M43.6301 29.8555L24.2651 49.2205L21.0832 46.0386L40.4482 26.6736L23.3805 26.6736L23.3805 22.1744L48.1293 22.1744L48.1293 46.9232L43.6301 46.9232L43.6301 29.8555Z" fill="white"/>
