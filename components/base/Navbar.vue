@@ -6,7 +6,7 @@
                 <li><NuxtLink data-value="about" to="/about" class="text-text-main font-semibold mx-3 sm:mx-5 lowercase hacker-animation">About</NuxtLink></li>
                 <li><NuxtLink data-value="projects" to="/projects" class="text-text-main font-semibold mx-3 sm:mx-4 lowercase hacker-animation">Projects</NuxtLink></li>
                 <li class="hover:cursor-pointer hover:bg-third transition ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:shadow-md duration-300 bg-secondary rounded-2xl h-9 flex sm:mx-5 px-8">
-                    <NuxtLink to="https://blog.jonathanbangert.com/" class="my-auto text-text-main font-semibold lowercase">blog</NuxtLink>
+                    <NuxtLink to="https://blog.arctix.dev/" class="my-auto text-text-main font-semibold lowercase">blog</NuxtLink>
                 </li>
             </ul>
             <Icon name="ci:hamburger-md" class="text-text-main only-mobile text-2xl"></Icon>
