@@ -1,26 +1,29 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "touch .output/.nojekyll && echo 'jonathanbangert.com' > .output/CNAME && mv .output/public/* .output/ && gh-pages --dotfiles -d .output",
-    "build-deploy": "yarn generate && yarn deploy"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@types/node": "^22.5.0",
-    "nuxt": "^3.13.0",
-    "@nuxt/icon": "^1.4.10"
-  },
-  "packageManager": "yarn@3.6.1",
-  "dependencies": {
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "yarn": "^1.22.22",
-    "gsap": "^3.12.2"
-  }
+	"name": "arctix.dev",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.41",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"tailwindcss": "^3.4.10",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3"
+	},
+	"type": "module"
 }
